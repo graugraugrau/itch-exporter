@@ -1,0 +1,10 @@
+# Environments
+.env
+.venv
+
+# IDE
+.idea
+.vs
+
+# Requirements
+requirements.txt

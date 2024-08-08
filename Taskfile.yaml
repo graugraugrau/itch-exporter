@@ -1,0 +1,22 @@
+version: '3'
+
+tasks:
+  install:
+    cmds:
+      - pipenv install --dev
+    silent: true
+
+  lint:
+    cmds:
+      - pylint src test
+    silent: true
+
+  type:
+    cmds:
+      - mypy src test
+    silent: true
+
+  test:
+    cmds:
+      - python -m unittest discover -v test
+    silent: true
